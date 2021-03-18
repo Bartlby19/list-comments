@@ -6,7 +6,9 @@ import InputInformation from "./components/InputInformation/InputInformation";
 class App extends React.Component {
   render() {
     return (
-        <InputInformation/>
+
+            <InputInformation/>
+
     )
   }
 }

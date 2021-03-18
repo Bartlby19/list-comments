@@ -1,6 +1,57 @@
+.control-label {
+    font-size: 70px;
+    line-height: 65px;
+    color: #d7d7d7;
+    font-weight: 500;
+    font-family: "Roboto"
+
+}
+.size-info{
+    background: #2d3136;
+    width: 3360px;
+    height: 2433px;
+}
+.btn {
+    width: 460px;
+    height: 184px;
+    border-radius: 10px;
+    background-color: #be393b;
+    /*margin-top:218px;*/
+    padding: 0;
+}
+
+label.required:after {
+    color: red;
+    content: " *";
+}
+
+.form-control {
+    padding: 0;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 70px;
+    width: 945px;
+    height: 195px;
+    background-color: #2d3136;
+    color: white;
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.52);
+}
 
 .form-control:focus {
-    border-color: red;
+    border-color: #be393b;
     -webkit-box-shadow: none;
+    background-color: #2d3136;
     box-shadow: none;
+    color: white;
+}
+
+.logo-position{
+    margin-top:116px;
+    margin-left:503px;
+}
+
+.contact-position{
+    margin-top:299px;
+    margin-left:1291px;
 }

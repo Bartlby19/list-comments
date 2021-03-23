@@ -3,7 +3,7 @@
     display: grid;
     width: 210em;
     height: 152.0625em;
-    zoom: 30%;
+    zoom: 20%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -46,18 +46,14 @@ input#ex2.form-control {
     border-radius: 0.625em;
     background-color: #be393b;
     padding: 0;
-    /*margin-left: 121.8125em;*/
-    margin-left: 0;
-
+    margin-left:  164.375em;
 }
 
-
 .control-label {
-    font-size: 60px;
-    line-height: 65px;
+    font-size: 85px;
+    line-height: 85px;
     color: #d7d7d7;
     font-weight: 400;
-    font-family: "Roboto"
 }
 
 label.required:after {
@@ -67,9 +63,8 @@ label.required:after {
 
 .form-control {
     padding: 0;
-    font-family: "Roboto";
     font-weight: 500;
-    font-size: 70px;
+    font-size: 85px;
     background-color: #2d3136;
     color: white;
     border-radius: 10px;

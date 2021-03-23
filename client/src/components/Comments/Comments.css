@@ -1,0 +1,23 @@
+.wrapper-comments {
+    display: grid;
+    width: 210em;
+    height: auto;
+    zoom: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wrapper-info{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    font-size: 85px;
+    margin-top:295px;
+    margin-bottom:273px
+;
+}
+.wrapper-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+
+}

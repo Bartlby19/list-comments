@@ -36,7 +36,6 @@ const InputInformation = () => {
                     <label className="control-label required" htmlFor="username">E-Mail</label>
                     <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
                 </div>
-
             </div>
             <div>
                 <button type="button" className="btn ">

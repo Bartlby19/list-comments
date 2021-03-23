@@ -6,9 +6,10 @@ import InputInformation from "./components/InputInformation/InputInformation";
 class App extends React.Component {
   render() {
     return (
-
-            <InputInformation/>
-
+        // <div className="wrapper-app">
+            <InputInformation />
+            // {/*// <div>adcascsacsac</div>*/}
+// </div>
     )
   }
 }

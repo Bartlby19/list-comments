@@ -1,23 +1,63 @@
-.control-label {
-    font-size: 70px;
-    line-height: 65px;
-    color: #d7d7d7;
-    font-weight: 500;
-    font-family: "Roboto"
+.wrapper {
+    background: #2d3136;
+    display: grid;
+    width: 210em;
+    height: 152.0625em;
+    zoom: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-box {
+    margin-top: 7.25em;
+    margin-left: 31.4375em;
+}
+
+.contact-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.info-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+input#exampleInputEmail1.form-control {
+    width: 945px;
+    height: 195px;
+}
+
+input#ex2.form-control {
+    width: 945px;
+    height: 195px;
+}
+
+.info-box2 {
+    grid-column: 2;
+    grid-row: 3/1;
+}
+
+.btn {
+    width: 28.750em;
+    height: 11.563em;
+    border-radius: 0.625em;
+    background-color: #be393b;
+    padding: 0;
+    /*margin-left: 121.8125em;*/
+    margin-left: 0;
 
 }
-.size-info{
-    background: #2d3136;
-    width: 3360px;
-    height: 2433px;
-}
-.btn {
-    width: 460px;
-    height: 184px;
-    border-radius: 10px;
-    background-color: #be393b;
-    /*margin-top:218px;*/
-    padding: 0;
+
+
+.control-label {
+    font-size: 60px;
+    line-height: 65px;
+    color: #d7d7d7;
+    font-weight: 400;
+    font-family: "Roboto"
 }
 
 label.required:after {
@@ -30,8 +70,6 @@ label.required:after {
     font-family: "Roboto";
     font-weight: 500;
     font-size: 70px;
-    width: 945px;
-    height: 195px;
     background-color: #2d3136;
     color: white;
     border-radius: 10px;
@@ -46,12 +84,8 @@ label.required:after {
     color: white;
 }
 
-.logo-position{
-    margin-top:116px;
-    margin-left:503px;
-}
-
-.contact-position{
-    margin-top:299px;
-    margin-left:1291px;
+textarea#comment.form-control {
+    width: 1141px;
+    height: 667px;
+    resize: none
 }

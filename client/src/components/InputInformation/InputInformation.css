@@ -2,10 +2,10 @@
     background: #2d3136;
     display: grid;
     width: 210em;
-    height: 152.0625em;
-    zoom: 20%;
+   height: 152.0625em;
+    zoom: 15%;
     margin-left: auto;
-    margin-right: auto;
+   margin-right: auto;
 }
 
 .logo-box {

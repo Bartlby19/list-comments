@@ -1,0 +1,24 @@
+.wrapper-footer {
+    background: #2d3136;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    height: 18.0625em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-logo {
+    margin-top: 4.6875em;
+    margin-left: 31.4375em;
+}
+
+.social-networks {
+    display: inline-block;
+    margin-top: 5em;
+    margin-left: 51.6875em;
+}
+
+.fb-position {
+    margin-left: 6.3em
+}

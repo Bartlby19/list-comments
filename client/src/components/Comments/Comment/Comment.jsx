@@ -6,7 +6,7 @@ import {useDispatch} from "react-redux";
 const Comment = () => {
     // const dispatch = useDispatch();
     return (
-        <div >
+        <div>
             <div className="card text-white bg-primary mb-3">
                 <div className="card-header">Header</div>
                 <div className="card-body">

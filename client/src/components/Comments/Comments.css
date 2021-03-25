@@ -3,7 +3,6 @@
     border-style: solid;
     width: 210em;
     height: auto;
-    zoom: 15%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -15,6 +14,7 @@
 }
 
 .wrapper-info {
+
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;

@@ -7,51 +7,28 @@ import Footer from "../Footer/Footer";
 
 const Comments = () => {
     // const dispatch = useDispatch();
+    let comments = [];
+    let info = {
+        className: "first-card",
+        name: "Sergey",
+        email: "bsssssssssssdfffffffffffffsssssssssssss",
+        comment: "Hello Worldewfwfwefwfwefwefwefwefwfwefwefwefewfwefwef!!!! ",
+    }
+    comments.push(<Comment info={info}/>);
+    comments.push(<Comment info={info}/>);
+    comments.push(<Comment info={info}/>);
+    comments.push(<Comment info={info}/>);
+    comments.push(<Comment info={info}/>);
+
     return (
         <div className="comments-footer">
             <div className="wrapper-comments">
                 <div className="wrapper-info">
                     Выводим комментарий
                 </div>
-
-
-
-
                 <div className="wrapper-box">
-
-                        <Comment/>
-                        <Comment/>
-                        <Comment/>
-                        <Comment/>
-                        <Comment/>
-                        <Comment/>
-                        <Comment/>
-                        <Comment/>
-                        <Comment/>
-                        <Comment/>
-                        <Comment/>
-                        <Comment/>
-
-
-                    {/*<div>*/}
-                    {/*    <Comment/>*/}
-                    {/*</div>*/}
-                    {/*<div>*/}
-                    {/*    <Comment/>*/}
-                    {/*</div>*/}
-                    {/*<div>*/}
-                    {/*    <Comment/>*/}
-                    {/*</div>*/}
-                    {/*<div>*/}
-                    {/*    <Comment/>*/}
-                    {/*</div>*/}
+                    {comments}
                 </div>
-
-
-
-
-
-
 
             </div>
             <Footer/>

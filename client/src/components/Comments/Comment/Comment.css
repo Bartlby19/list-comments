@@ -1,7 +1,75 @@
-/*grid-auto-columns:minmax(51em,auto) ;*/
-/*!*отступы со всех сторон 8.1*!*/
-/*.wrapper-box {*/
-/*    display: grid;*/
-/*    grid-template-columns: 1fr;*/
-/*    */
-/*}*/
+
+.wrapper-card {
+    display: grid;
+    grid-auto-columns: 1fr;
+}
+.card-header{
+    height: 165px;
+    font-size: 68px;
+    line-height: 148px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Roboto";
+    text-align: center;
+    word-wrap: break-word;
+
+}
+.card-title {
+    width:580px;
+    word-wrap: break-word;
+    margin-top: 100px;
+    margin-bottom: 0;
+    font-size: 68px;
+    line-height: 85px;
+    font-weight: bold;
+    font-family: "Roboto";
+    text-align: center;
+}
+.text-position{
+ margin-bottom: 250px;
+ margin-top: 100px;
+}
+.card-text {
+    width: 385px;
+
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 500;
+    font-family: "Roboto";
+    text-align: center;
+    word-wrap: break-word;
+}
+.card-box{
+    display: grid;
+    grid-auto-columns: minmax(660px,auto);
+    padding: 0;
+    justify-items: center;
+}
+
+
+.first-card.card-body{
+    background: #e9eef3;
+}
+.first-card.card-header {
+    background:#4b596c;
+}
+.first-card.card-title {
+    color: #6d737b;
+}
+.first-card.card-text {
+    color: #767582;
+}
+
+
+.second-card.card-body{
+    background: #deebde;
+}
+.second-card.card-header {
+    background:#58ad52;
+}
+.second-card.card-title {
+    color: #58ad52;
+}
+.second-card.card-text {
+    color: #768275;
+}

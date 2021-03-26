@@ -13,7 +13,8 @@ const Comment = (props) => {
                 <div className={className + "  card-header"}>{name}</div>
                 <div className={className + "  card-body card-box"}>
                     <h5 className={className + " card-title"}>{email}</h5>
-                    <p className={className + " card-text "}><div className="text-position">{comment}</div></p>
+                    <div className={className + " card-text text-position"}><div className="text-position">{comment}</div>
+                    </div>
                 </div>
             </div>
         </div>

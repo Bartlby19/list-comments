@@ -2,8 +2,11 @@ import React, {useEffect, useState} from "react";
 import "./InputInformation.css"
 import contact from "../img/contact.jpg"
 import logo from "../img/logo.jpg"
+import {useDispatch} from "react-redux";
+import {addUsersInformation} from "../redux/actions";
 
 function InputInformation() {
+    const dispatch = useDispatch();
     const [disable, setDisable] = useState(true);
     const [inputValues, setInputValues] = useState({
         name: '', email: '', comment: ''
@@ -25,19 +28,7 @@ function InputInformation() {
     }
 
     function addInformation() {
-        const url = "users/information";
-        let response = async () => {
-            await fetch(url, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(inputValues)
-            });
-        }
-        let usersInformation=response();
-
-        return;
+        dispatch(addUsersInformation(inputValues));
     }
 
     return (

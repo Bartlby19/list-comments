@@ -25,13 +25,9 @@
     font-family: "Roboto";
     text-align: center;
 }
-.text-position{
- margin-bottom: 250px;
- margin-top: 100px;
-}
+
 .card-text {
     width: 385px;
-
     font-size: 60px;
     line-height: 60px;
     font-weight: 500;
@@ -39,13 +35,16 @@
     text-align: center;
     word-wrap: break-word;
 }
+.text-position{
+    margin-bottom: 250px;
+    margin-top: 100px;
+}
 .card-box{
     display: grid;
     grid-auto-columns: minmax(660px,auto);
     padding: 0;
     justify-items: center;
 }
-
 
 .first-card.card-body{
     background: #e9eef3;

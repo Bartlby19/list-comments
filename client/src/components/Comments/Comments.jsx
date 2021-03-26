@@ -1,25 +1,24 @@
-import React from "react";
+import React, {useEffect}from "react";
 import "./Comments.css"
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import Comment from "./Comment/Comment";
 import Footer from "../Footer/Footer";
-// import {changeStep, getTypeOfStructure} from "../redux/actions";
+import {addUsersInformation} from "../redux/actions";
 
 const Comments = () => {
-    // const dispatch = useDispatch();
-    let comments = [];
-    let info = {
-        className: "first-card",
-        name: "Sergey",
-        email: "bsssssssssssdfffffffffffffsssssssssssss",
-        comment: "Hello Worldewfwfwefwfwefwefwefwefwfwefwefwefewfwefwef!!!! ",
-    }
-    comments.push(<Comment info={info}/>);
-    comments.push(<Comment info={info}/>);
-    comments.push(<Comment info={info}/>);
-    comments.push(<Comment info={info}/>);
-    comments.push(<Comment info={info}/>);
-
+    const dispatch = useDispatch();
+    const usersInf = useSelector(state => state.app.userInformation)
+    let userComments = usersInf.map((el, ind) => {
+        let className = "first-card";
+        if (ind % 2 !== 0) {
+            className = "second-card"
+        }
+         el["className"] = className;
+        return <Comment info={el} key={el["id"]}/>
+    });
+    useEffect(() => {
+        dispatch(addUsersInformation())
+    },[])
     return (
         <div className="comments-footer">
             <div className="wrapper-comments">
@@ -27,9 +26,8 @@ const Comments = () => {
                     Выводим комментарий
                 </div>
                 <div className="wrapper-box">
-                    {comments}
+                    {userComments}
                 </div>
-
             </div>
             <Footer/>
         </div>

@@ -2,6 +2,9 @@ const {execAsync, getAllUsersInfoList} =require( "../utilites/utils");
 
 async function getUsersInformation(userInfo) {
     console.log(userInfo)
+    if (userInfo["notInfo"]) {
+        return getAllUsersInfoList()
+    }
     return new Promise(async (resolve, reject) => {
         try {
             let params = [userInfo["name"], userInfo["email"],

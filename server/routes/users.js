@@ -1,9 +1,16 @@
-var express = require('express');
-var router = express.Router();
+const {getUsersInformation} = require("../user-information/user-info");
+let express = require('express');
+let router = express.Router();
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+router.post('/information', async function (req, res) {
+  let userInfo = req.body;
+  try {
+    let usersInfo=await getUsersInformation(userInfo);
+    res.send(usersInfo)
+  } catch (error) {
+    res.send(error)
+  }
 });
+
 
 module.exports = router;

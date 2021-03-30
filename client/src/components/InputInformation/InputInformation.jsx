@@ -7,14 +7,15 @@ import {addUsersInformation} from "../redux/actions";
 
 function InputInformation() {
     const dispatch = useDispatch();
-    const addInfo=dispatch(addUsersInformation());
     const [disable, setDisable] = useState(true);
     const [inputValues, setInputValues] = useState({
         name: '', email: '', comment: ''
     });
     useEffect(() => {
+        dispatch(addUsersInformation());
         for (let key in inputValues) {
-            if (inputValues[key] !== '') {
+            const value = inputValues[key];
+            if (value !== '') {
             } else {
                 setDisable(true);
                 return
@@ -22,8 +23,9 @@ function InputInformation() {
         }
         setDisable(false);
 
+    }, [inputValues]);
 
-    }, [inputValues,addInfo]);
+
 
     function handleInputChange(event) {
         const {name, value} = event.target;
@@ -31,7 +33,7 @@ function InputInformation() {
     }
 
     function addInformation() {
-        addInfo(inputValues);
+        dispatch(addUsersInformation(inputValues));
         setInputValues({...inputValues, name: '', email: '', comment: ''});
     }
 
@@ -47,17 +49,17 @@ function InputInformation() {
                 <div>
                     <label className="control-label required" htmlFor="username">Имя</label>
                     <input name="name" onChange={handleInputChange} className="form-control " id="ex2" type="text"
-                           value=""
+                           value={inputValues.name}
                     />
                 </div>
                 <div className="info-box2">
                     <label className="control-label required" htmlFor="username">Комментарий</label>
-                    <textarea value="" name="comment" onChange={handleInputChange}
+                    <textarea value={inputValues.comment} name="comment" onChange={handleInputChange}
                               className="form-control" id="comment"/>
                 </div>
                 <div>
                     <label className="control-label required" htmlFor="username">E-Mail</label>
-                    <input value="" onChange={handleInputChange} name="email" type="email"
+                    <input value={inputValues.email} onChange={handleInputChange} name="email" type="email"
                            className="form-control"
                            id="exampleInputEmail1"
                            aria-describedby="emailHelp"/>
